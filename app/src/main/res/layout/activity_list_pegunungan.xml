@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListPegunungan">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30pt"
+            android:background="@drawable/bgnavbar">
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DAFTAR PEGUNUNGAN"
+                android:fontFamily="serif-monospace"
+                android:textSize="25dp"
+                android:textColor="#ffff"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp" />
+
+            <Button
+                android:id="@+id/INFO"
+                android:layout_toLeftOf="@+id/text"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/ic_info_outline"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnCount="1"
+                android:rowCount="5"
+                android:alignmentMode="alignMargins"
+                android:columnOrderPreserved="false"
+                android:background="@drawable/listcontentbg">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/PGBUKITBARISAN"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="25dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#191970">
+
+                        <ImageView
+                            android:id="@+id/gpgbukitbarisan"
+                            android:layout_width="200dp"
+                            android:layout_height="100dp"
+                            android:layout_alignParentTop="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/pegununganbukitbarisan" />
+
+                        <TextView
+                            android:id="@+id/tpgbukitbarisan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/gpgbukitbarisan"
+                            android:padding="10dp"
+                            android:text="Pegunungan Bukit Barisan"
+                            android:textColor="#ffff"
+                            android:textStyle="bold"
+                            android:fontFamily="sans-serif"
+                            android:textSize="12dp"
+                            android:layout_centerHorizontal="true"/>
+
+                        <Button
+                            android:id="@+id/Selengkapnya1"
+                            android:layout_toEndOf="@id/gpgbukitbarisan"
+                            android:layout_marginTop="70dp"
+                            android:text="Lihat Selengkapnya"
+                            android:textSize="10dp"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/buttonbg"/>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/PGJAYAWIJAYA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="25dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#191970">
+
+                        <ImageView
+                            android:id="@+id/gpgjayawijaya"
+                            android:layout_width="200dp"
+                            android:layout_height="100dp"
+                            android:layout_alignParentTop="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/pegununganjayawijaya" />
+
+                        <TextView
+                            android:id="@+id/tpgjayawijaya"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/gpgjayawijaya"
+                            android:padding="10dp"
+                            android:text="Pegunungan Jayawijaya"
+                            android:textColor="#ffff"
+                            android:textStyle="bold"
+                            android:fontFamily="sans-serif"
+                            android:textSize="12dp"
+                            android:layout_centerHorizontal="true"/>
+
+                        <Button
+                            android:id="@+id/Selengkapnya2"
+                            android:layout_toEndOf="@id/gpgjayawijaya"
+                            android:layout_marginTop="70dp"
+                            android:text="Lihat Selengkapnya"
+                            android:textSize="10dp"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/buttonbg"/>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/PGKAPURUTARA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="25dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#191970">
+
+                        <ImageView
+                            android:id="@+id/gpgkapurutara"
+                            android:layout_width="200dp"
+                            android:layout_height="100dp"
+                            android:layout_alignParentTop="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/pegunungankapurutara" />
+
+                        <TextView
+                            android:id="@+id/tpgkapurutara"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/gpgkapurutara"
+                            android:padding="10dp"
+                            android:text="Pegunungan Kapur Utara"
+                            android:textColor="#ffff"
+                            android:textStyle="bold"
+                            android:fontFamily="sans-serif"
+                            android:textSize="12dp"
+                            android:layout_centerHorizontal="true"/>
+
+                        <Button
+                            android:id="@+id/Selengkapnya3"
+                            android:layout_toEndOf="@id/gpgkapurutara"
+                            android:layout_marginTop="70dp"
+                            android:text="Lihat Selengkapnya"
+                            android:textSize="10dp"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/buttonbg"/>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/PGSCHWANER"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="25dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#191970">
+
+                        <ImageView
+                            android:id="@+id/gpgschwaner"
+                            android:layout_width="200dp"
+                            android:layout_height="100dp"
+                            android:layout_alignParentTop="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/pegununganschwaner" />
+
+                        <TextView
+                            android:id="@+id/tpgschwaner"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/gpgschwaner"
+                            android:padding="10dp"
+                            android:text="Pegunungan Schwaner"
+                            android:textColor="#ffff"
+                            android:textStyle="bold"
+                            android:fontFamily="sans-serif"
+                            android:textSize="12dp"
+                            android:layout_centerHorizontal="true"/>
+
+                        <Button
+                            android:id="@+id/Selengkapnya4"
+                            android:layout_toEndOf="@id/gpgschwaner"
+                            android:layout_marginTop="70dp"
+                            android:text="Lihat Selengkapnya"
+                            android:textSize="10dp"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/buttonbg"/>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/PGMENOREH"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="25dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#191970">
+
+                        <ImageView
+                            android:id="@+id/gpgmenoreh"
+                            android:layout_width="200dp"
+                            android:layout_height="100dp"
+                            android:layout_alignParentTop="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/pegununganmenoreh" />
+
+                        <TextView
+                            android:id="@+id/tpgmenoreh"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/gpgmenoreh"
+                            android:padding="10dp"
+                            android:text="Pegunungan Menoreh"
+                            android:textColor="#ffff"
+                            android:textStyle="bold"
+                            android:fontFamily="sans-serif"
+                            android:textSize="12dp"
+                            android:layout_centerHorizontal="true"/>
+
+                        <Button
+                            android:id="@+id/Selengkapnya5"
+                            android:layout_toEndOf="@id/gpgmenoreh"
+                            android:layout_marginTop="70dp"
+                            android:text="Lihat Selengkapnya"
+                            android:textSize="10dp"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/buttonbg"/>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </GridLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

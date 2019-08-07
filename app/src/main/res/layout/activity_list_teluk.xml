@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListTeluk">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30pt"
+            android:background="@drawable/bgnavbar">
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DAFTAR TELUK"
+                android:fontFamily="serif-monospace"
+                android:textSize="25dp"
+                android:textColor="#ffff"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp" />
+
+            <Button
+                android:id="@+id/INFO"
+                android:layout_toLeftOf="@+id/text"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="60dp"
+                android:background="@drawable/ic_info_outline"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnCount="1"
+                android:rowCount="5"
+                android:alignmentMode="alignMargins"
+                android:columnOrderPreserved="false"
+                android:background="@drawable/listcontentbg">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/TELUKAWUR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="25dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#191970">
+
+                        <ImageView
+                            android:id="@+id/gtelukawur"
+                            android:layout_width="200dp"
+                            android:layout_height="100dp"
+                            android:layout_alignParentTop="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/telukawur" />
+
+                        <TextView
+                            android:id="@+id/ttelukawur"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/gtelukawur"
+                            android:padding="10dp"
+                            android:text="Teluk Awur"
+                            android:textColor="#ffff"
+                            android:textStyle="bold"
+                            android:fontFamily="sans-serif"
+                            android:textSize="12dp"
+                            android:layout_centerHorizontal="true"/>
+
+                        <Button
+                            android:id="@+id/Selengkapnya1"
+                            android:layout_toEndOf="@id/gtelukawur"
+                            android:layout_marginTop="70dp"
+                            android:text="Lihat Selengkapnya"
+                            android:textSize="10dp"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/buttonbg"/>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/TELUKPELABUHANRATU"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="25dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#191970">
+
+                        <ImageView
+                            android:id="@+id/gtelukpelabuhanratu"
+                            android:layout_width="200dp"
+                            android:layout_height="100dp"
+                            android:layout_alignParentTop="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/telukpelabuhanratu" />
+
+                        <TextView
+                            android:id="@+id/ttelukpelabuhanratu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/gtelukpelabuhanratu"
+                            android:padding="10dp"
+                            android:text="Teluk Pelabuhan Ratu"
+                            android:textColor="#ffff"
+                            android:textStyle="bold"
+                            android:fontFamily="sans-serif"
+                            android:textSize="12dp"
+                            android:layout_centerHorizontal="true"/>
+
+                        <Button
+                            android:id="@+id/Selengkapnya2"
+                            android:layout_toEndOf="@id/gtelukpelabuhanratu"
+                            android:layout_marginTop="70dp"
+                            android:text="Lihat Selengkapnya"
+                            android:textSize="10dp"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/buttonbg"/>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/TELUKJAKARTA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="25dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#191970">
+
+                        <ImageView
+                            android:id="@+id/gtelukjakarta"
+                            android:layout_width="200dp"
+                            android:layout_height="100dp"
+                            android:layout_alignParentTop="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/telukjakarta" />
+
+                        <TextView
+                            android:id="@+id/ttelukjakarta"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/gtelukjakarta"
+                            android:padding="10dp"
+                            android:text="Teluk Jakarta"
+                            android:textColor="#ffff"
+                            android:textStyle="bold"
+                            android:fontFamily="sans-serif"
+                            android:textSize="12dp"
+                            android:layout_centerHorizontal="true"/>
+
+                        <Button
+                            android:id="@+id/Selengkapnya3"
+                            android:layout_toEndOf="@id/gtelukjakarta"
+                            android:layout_marginTop="70dp"
+                            android:text="Lihat Selengkapnya"
+                            android:textSize="10dp"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/buttonbg"/>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/TELUKLABUANBAJO"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="25dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#191970">
+
+                        <ImageView
+                            android:id="@+id/gteluklabuanbajo"
+                            android:layout_width="200dp"
+                            android:layout_height="100dp"
+                            android:layout_alignParentTop="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/teluklabuanbajo" />
+
+                        <TextView
+                            android:id="@+id/tteluklabuanbajo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/gteluklabuanbajo"
+                            android:padding="10dp"
+                            android:text="Teluk Labuan Bajo"
+                            android:textColor="#ffff"
+                            android:textStyle="bold"
+                            android:fontFamily="sans-serif"
+                            android:textSize="12dp"
+                            android:layout_centerHorizontal="true"/>
+
+                        <Button
+                            android:id="@+id/Selengkapnya4"
+                            android:layout_toEndOf="@id/gteluklabuanbajo"
+                            android:layout_marginTop="70dp"
+                            android:text="Lihat Selengkapnya"
+                            android:textSize="10dp"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/buttonbg"/>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/TELUKBAYUR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="25dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#191970">
+
+                        <ImageView
+                            android:id="@+id/gtelukbayur"
+                            android:layout_width="200dp"
+                            android:layout_height="100dp"
+                            android:layout_alignParentTop="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/telukbayur" />
+
+                        <TextView
+                            android:id="@+id/ttelukbayur"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/gtelukbayur"
+                            android:padding="10dp"
+                            android:text="Teluk Bayur"
+                            android:textColor="#ffff"
+                            android:textStyle="bold"
+                            android:fontFamily="sans-serif"
+                            android:textSize="12dp"
+                            android:layout_centerHorizontal="true"/>
+
+                        <Button
+                            android:id="@+id/Selengkapnya5"
+                            android:layout_toEndOf="@id/gtelukbayur"
+                            android:layout_marginTop="70dp"
+                            android:text="Lihat Selengkapnya"
+                            android:textSize="10dp"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/buttonbg"/>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </GridLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

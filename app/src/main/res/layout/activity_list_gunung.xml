@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListGunung">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30pt"
+            android:background="@drawable/bgnavbar">
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DAFTAR GUNUNG"
+                android:fontFamily="serif-monospace"
+                android:textSize="25dp"
+                android:textColor="#ffff"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp" />
+
+            <Button
+                android:id="@+id/INFO"
+                android:layout_toLeftOf="@+id/text"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/ic_info_outline"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnCount="1"
+                android:rowCount="5"
+                android:alignmentMode="alignMargins"
+                android:columnOrderPreserved="false"
+                android:background="@drawable/listcontentbg">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/GUNUNGKERINCI"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="25dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#191970">
+
+                        <ImageView
+                            android:id="@+id/ggunungkerinci"
+                            android:layout_width="200dp"
+                            android:layout_height="100dp"
+                            android:layout_alignParentTop="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/gunungkerinci" />
+
+                        <TextView
+                            android:id="@+id/tgunungkerinci"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/ggunungkerinci"
+                            android:padding="10dp"
+                            android:text="Gunung Kerinci"
+                            android:textColor="#ffff"
+                            android:textStyle="bold"
+                            android:fontFamily="sans-serif"
+                            android:textSize="12dp"
+                            android:layout_centerHorizontal="true"/>
+
+                        <Button
+                            android:id="@+id/Selengkapnya1"
+                            android:layout_toEndOf="@id/ggunungkerinci"
+                            android:layout_marginTop="70dp"
+                            android:text="Lihat Selengkapnya"
+                            android:textSize="10dp"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/buttonbg"/>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/GUNUNGRINJANI"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="25dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#191970">
+
+                        <ImageView
+                            android:id="@+id/ggunungrinjani"
+                            android:layout_width="200dp"
+                            android:layout_height="100dp"
+                            android:layout_alignParentTop="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/gunungrinjani" />
+
+                        <TextView
+                            android:id="@+id/tgunungrinjani"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/ggunungrinjani"
+                            android:padding="10dp"
+                            android:text="Gunung Rinjani"
+                            android:textColor="#ffff"
+                            android:textStyle="bold"
+                            android:fontFamily="sans-serif"
+                            android:textSize="12dp"
+                            android:layout_centerHorizontal="true"/>
+
+                        <Button
+                            android:id="@+id/Selengkapnya2"
+                            android:layout_toEndOf="@id/ggunungrinjani"
+                            android:layout_marginTop="70dp"
+                            android:text="Lihat Selengkapnya"
+                            android:textSize="10dp"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/buttonbg"/>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/GUNUNGSEMERU"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="25dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#191970">
+
+                        <ImageView
+                            android:id="@+id/ggunungsemeru"
+                            android:layout_width="200dp"
+                            android:layout_height="100dp"
+                            android:layout_alignParentTop="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/gunungsemeru" />
+
+                        <TextView
+                            android:id="@+id/tgunungsemeru"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/ggunungsemeru"
+                            android:padding="10dp"
+                            android:text="Gunung Semeru"
+                            android:textColor="#ffff"
+                            android:textStyle="bold"
+                            android:fontFamily="sans-serif"
+                            android:textSize="12dp"
+                            android:layout_centerHorizontal="true"/>
+
+                        <Button
+                            android:id="@+id/Selengkapnya3"
+                            android:layout_toEndOf="@id/ggunungsemeru"
+                            android:layout_marginTop="70dp"
+                            android:text="Lihat Selengkapnya"
+                            android:textSize="10dp"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/buttonbg"/>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/GUNUNGSLAMET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="25dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#191970">
+
+                        <ImageView
+                            android:id="@+id/ggunungslamet"
+                            android:layout_width="200dp"
+                            android:layout_height="100dp"
+                            android:layout_alignParentTop="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/gunungslamet" />
+
+                        <TextView
+                            android:id="@+id/tgunungslamet"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/ggunungslamet"
+                            android:padding="10dp"
+                            android:text="Gunung Slamet"
+                            android:textColor="#ffff"
+                            android:textStyle="bold"
+                            android:fontFamily="sans-serif"
+                            android:textSize="12dp"
+                            android:layout_centerHorizontal="true"/>
+
+                        <Button
+                            android:id="@+id/Selengkapnya4"
+                            android:layout_toEndOf="@id/ggunungslamet"
+                            android:layout_marginTop="70dp"
+                            android:text="Lihat Selengkapnya"
+                            android:textSize="10dp"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/buttonbg"/>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/GUNUNGTANGKUBANPERAHU"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="25dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#191970">
+
+                        <ImageView
+                            android:id="@+id/ggunungtangkubanperahu"
+                            android:layout_width="200dp"
+                            android:layout_height="100dp"
+                            android:layout_alignParentTop="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/gunungtangkubanperahu" />
+
+                        <TextView
+                            android:id="@+id/tgunungtangkubanperahu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/ggunungtangkubanperahu"
+                            android:padding="10dp"
+                            android:text="Gunung Tangkuban Perahu"
+                            android:textColor="#ffff"
+                            android:textStyle="bold"
+                            android:fontFamily="sans-serif"
+                            android:textSize="12dp"
+                            android:layout_centerHorizontal="true"/>
+
+                        <Button
+                            android:id="@+id/Selengkapnya5"
+                            android:layout_toEndOf="@id/ggunungtangkubanperahu"
+                            android:layout_marginTop="70dp"
+                            android:text="Lihat Selengkapnya"
+                            android:textSize="10dp"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/buttonbg"/>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </GridLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

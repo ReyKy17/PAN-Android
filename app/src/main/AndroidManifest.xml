@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.pengetahuanalamnusantara">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logoaplikasi"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logoaplikasi"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".KontenTelukLabuanBajo"></activity>
+        <activity android:name=".KontenWisataRajaAmpat" />
+        <activity android:name=".KontenWisataPulauKomodo" />
+        <activity android:name=".KontenWisataPantaiBelitung" />
+        <activity android:name=".KontenWisataGunungBromo" />
+        <activity android:name=".KontenWisataDanauKelimutu" />
+        <activity android:name=".KontenSungaiMahakam" />
+        <activity android:name=".KontenSungaiMusi" />
+        <activity android:name=".KontenSungaiKapuas" />
+        <activity android:name=".KontenSungaiDigul" />
+        <activity android:name=".KontenSungaiBengawanSolo" />
+        <activity android:name=".KontenDanauTuwoti" />
+        <activity android:name=".KontenDanauToba" />
+        <activity android:name=".KontenDanauSentarum" />
+        <activity android:name=".KontenDanauPoso" />
+        <activity android:name=".KontenDanauMatano" />
+        <activity android:name=".KontenPGMenoreh" />
+        <activity android:name=".KontenPGSchwaner" />
+        <activity android:name=".KontenPGKapurUtara" />
+        <activity android:name=".KontenPGJayaWijaya" />
+        <activity android:name=".KontenPGBukitBarisan" />
+        <activity android:name=".KontenGunungTangkubanPerahu" />
+        <activity android:name=".KontenGunungSlamet" />
+        <activity android:name=".KontenGunungSemeru" />
+        <activity android:name=".KontenGunungRinjani" />
+        <activity android:name=".KontenGunungKerinci" />
+        <activity android:name=".KontenDTPuncak" />
+        <activity android:name=".KontenDTMinahasa" />
+        <activity android:name=".KontenDTKaro" />
+        <activity android:name=".KontenDTGayo" />
+        <activity android:name=".KontenDTDieng" />
+        <activity android:name=".KontenTelukBayur" />
+        <activity android:name=".KontenTelukJakarta" />
+        <activity android:name=".KontenTelukPelabuhanRatu" />
+        <activity android:name=".KontenTelukAwur" />
+        <activity android:name=".KontenTanjungLesung" />
+        <activity android:name=".KontenTanjungGunung" />
+        <activity android:name=".KontenTanjungDewa" />
+        <activity android:name=".KontenTanjungBira" />
+        <activity android:name=".KontenTanjungApi" />
+        <activity android:name=".KontenSelatSunda" />
+        <activity android:name=".KontenSelatMalaka" />
+        <activity android:name=".KontenSelatMakassar" />
+        <activity android:name=".KontenSelatLombok" />
+        <activity android:name=".KontenSelatBali" />
+        <activity android:name=".KontenLautTimor" />
+        <activity android:name=".KontenLautSulawesi" />
+        <activity android:name=".KontenLautSawu" />
+        <activity android:name=".KontenLautJawa" />
+        <activity android:name=".KontenLautFlores" />
+        <activity android:name=".KontenPulauPapua" />
+        <activity android:name=".KontenPulauSulawesi" />
+        <activity android:name=".KontenPulauKalimantan" />
+        <activity android:name=".KontenPulauJawa" />
+        <activity android:name=".KontenPulauSumatra" />
+        <activity android:name=".TentangPembuat" />
+        <activity android:name=".TentangAplikasi" />
+        <activity android:name=".Info" />
+        <activity android:name=".ListWisata" />
+        <activity android:name=".ListSelat" />
+        <activity android:name=".ListSungai" />
+        <activity android:name=".ListDanau" />
+        <activity android:name=".ListPegunungan" />
+        <activity android:name=".ListGunung" />
+        <activity android:name=".ListDataranTinggi" />
+        <activity android:name=".ListTeluk" />
+        <activity android:name=".ListTanjung" />
+        <activity android:name=".ListLaut" />
+        <activity android:name=".ListPulau" />
+        <activity android:name=".Home" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Dashboard">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

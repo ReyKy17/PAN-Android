@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListSelat">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30pt"
+            android:background="@drawable/bgnavbar">
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DAFTAR SELAT"
+                android:fontFamily="serif-monospace"
+                android:textSize="25dp"
+                android:textColor="#ffff"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp" />
+
+            <Button
+                android:id="@+id/INFO"
+                android:layout_toLeftOf="@+id/text"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="60dp"
+                android:background="@drawable/ic_info_outline"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnCount="1"
+                android:rowCount="5"
+                android:alignmentMode="alignMargins"
+                android:columnOrderPreserved="false"
+                android:background="@drawable/listcontentbg">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/SELATBALI"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="25dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#191970">
+
+                        <ImageView
+                            android:id="@+id/gselatbali"
+                            android:layout_width="200dp"
+                            android:layout_height="100dp"
+                            android:layout_alignParentTop="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/selatbali" />
+
+                        <TextView
+                            android:id="@+id/tselatbali"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/gselatbali"
+                            android:padding="10dp"
+                            android:text="Selat Bali"
+                            android:textColor="#ffff"
+                            android:textStyle="bold"
+                            android:fontFamily="sans-serif"
+                            android:textSize="12dp"
+                            android:layout_centerHorizontal="true"/>
+
+                        <Button
+                            android:id="@+id/Selengkapnya1"
+                            android:layout_toEndOf="@id/gselatbali"
+                            android:layout_marginTop="70dp"
+                            android:text="Lihat Selengkapnya"
+                            android:textSize="10dp"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/buttonbg"/>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/SELATLOMBOK"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="25dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#191970">
+
+                        <ImageView
+                            android:id="@+id/gselatlombok"
+                            android:layout_width="200dp"
+                            android:layout_height="100dp"
+                            android:layout_alignParentTop="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/selatlombok" />
+
+                        <TextView
+                            android:id="@+id/tselatlombok"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/gselatlombok"
+                            android:padding="10dp"
+                            android:text="Selat Lombok"
+                            android:textColor="#ffff"
+                            android:textStyle="bold"
+                            android:fontFamily="sans-serif"
+                            android:textSize="12dp"
+                            android:layout_centerHorizontal="true"/>
+
+                        <Button
+                            android:id="@+id/Selengkapnya2"
+                            android:layout_toEndOf="@id/gselatlombok"
+                            android:layout_marginTop="70dp"
+                            android:text="Lihat Selengkapnya"
+                            android:textSize="10dp"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/buttonbg"/>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/SELATMAKASSAR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="25dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#191970">
+
+                        <ImageView
+                            android:id="@+id/gselatmakassar"
+                            android:layout_width="200dp"
+                            android:layout_height="100dp"
+                            android:layout_alignParentTop="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/selatmakassar" />
+
+                        <TextView
+                            android:id="@+id/tselatmakassar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/gselatmakassar"
+                            android:padding="10dp"
+                            android:text="Selat Makassar"
+                            android:textColor="#ffff"
+                            android:textStyle="bold"
+                            android:fontFamily="sans-serif"
+                            android:textSize="12dp"
+                            android:layout_centerHorizontal="true"/>
+
+                        <Button
+                            android:id="@+id/Selengkapnya3"
+                            android:layout_toEndOf="@id/gselatmakassar"
+                            android:layout_marginTop="70dp"
+                            android:text="Lihat Selengkapnya"
+                            android:textSize="10dp"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/buttonbg"/>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/SELATMALAKA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="25dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#191970">
+
+                        <ImageView
+                            android:id="@+id/gselatmalaka"
+                            android:layout_width="200dp"
+                            android:layout_height="100dp"
+                            android:layout_alignParentTop="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/selatmalaka" />
+
+                        <TextView
+                            android:id="@+id/tselatmalaka"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/gselatmalaka"
+                            android:padding="10dp"
+                            android:text="Selat Malaka"
+                            android:textColor="#ffff"
+                            android:textStyle="bold"
+                            android:fontFamily="sans-serif"
+                            android:textSize="12dp"
+                            android:layout_centerHorizontal="true"/>
+
+                        <Button
+                            android:id="@+id/Selengkapnya4"
+                            android:layout_toEndOf="@id/gselatmalaka"
+                            android:layout_marginTop="70dp"
+                            android:text="Lihat Selengkapnya"
+                            android:textSize="10dp"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/buttonbg"/>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/SELATSUNDA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="25dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#191970">
+
+                        <ImageView
+                            android:id="@+id/gselatsunda"
+                            android:layout_width="200dp"
+                            android:layout_height="100dp"
+                            android:layout_alignParentTop="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/selatsunda" />
+
+                        <TextView
+                            android:id="@+id/tselatsunda"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/gselatsunda"
+                            android:padding="10dp"
+                            android:text="Selat Sunda"
+                            android:textColor="#ffff"
+                            android:textStyle="bold"
+                            android:fontFamily="sans-serif"
+                            android:textSize="12dp"
+                            android:layout_centerHorizontal="true"/>
+
+                        <Button
+                            android:id="@+id/Selengkapnya5"
+                            android:layout_toEndOf="@id/gselatsunda"
+                            android:layout_marginTop="70dp"
+                            android:text="Lihat Selengkapnya"
+                            android:textSize="10dp"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/buttonbg"/>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </GridLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

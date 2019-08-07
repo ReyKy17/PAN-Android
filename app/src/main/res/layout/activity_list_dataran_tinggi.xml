@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListDataranTinggi">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30pt"
+            android:background="@drawable/bgnavbar">
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DAFTAR DATARAN TINGGI"
+                android:fontFamily="serif-monospace"
+                android:textSize="20dp"
+                android:textColor="#ffff"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp" />
+
+            <Button
+                android:id="@+id/INFO"
+                android:layout_toLeftOf="@+id/text"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/ic_info_outline"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnCount="1"
+                android:rowCount="5"
+                android:alignmentMode="alignMargins"
+                android:columnOrderPreserved="false"
+                android:background="@drawable/listcontentbg">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/DTDIENG"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="25dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#191970">
+
+                        <ImageView
+                            android:id="@+id/gdtdieng"
+                            android:layout_width="200dp"
+                            android:layout_height="100dp"
+                            android:layout_alignParentTop="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/datarantinggidieng" />
+
+                        <TextView
+                            android:id="@+id/tdtdieng"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/gdtdieng"
+                            android:padding="10dp"
+                            android:text="Dataran Tinggi Dieng"
+                            android:textColor="#ffff"
+                            android:textStyle="bold"
+                            android:fontFamily="sans-serif"
+                            android:textSize="12dp"
+                            android:layout_centerHorizontal="true"/>
+
+                        <Button
+                            android:id="@+id/Selengkapnya1"
+                            android:layout_toEndOf="@id/gdtdieng"
+                            android:layout_marginTop="70dp"
+                            android:text="Lihat Selengkapnya"
+                            android:textSize="10dp"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/buttonbg"/>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/DTGAYO"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="25dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#191970">
+
+                        <ImageView
+                            android:id="@+id/gdtgayo"
+                            android:layout_width="200dp"
+                            android:layout_height="100dp"
+                            android:layout_alignParentTop="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/datarantinggigayo" />
+
+                        <TextView
+                            android:id="@+id/tdtgayo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/gdtgayo"
+                            android:padding="10dp"
+                            android:text="Dataran Tinggi Gayo"
+                            android:textColor="#ffff"
+                            android:textStyle="bold"
+                            android:fontFamily="sans-serif"
+                            android:textSize="12dp"
+                            android:layout_centerHorizontal="true"/>
+
+                        <Button
+                            android:id="@+id/Selengkapnya2"
+                            android:layout_toEndOf="@id/gdtgayo"
+                            android:layout_marginTop="70dp"
+                            android:text="Lihat Selengkapnya"
+                            android:textSize="10dp"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/buttonbg"/>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/DTKARO"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="25dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#191970">
+
+                        <ImageView
+                            android:id="@+id/gdtkaro"
+                            android:layout_width="200dp"
+                            android:layout_height="100dp"
+                            android:layout_alignParentTop="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/datarantinggikaro" />
+
+                        <TextView
+                            android:id="@+id/tdtkaro"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/gdtkaro"
+                            android:padding="10dp"
+                            android:text="Dataran Tinggi Karo"
+                            android:textColor="#ffff"
+                            android:textStyle="bold"
+                            android:fontFamily="sans-serif"
+                            android:textSize="12dp"
+                            android:layout_centerHorizontal="true"/>
+
+                        <Button
+                            android:id="@+id/Selengkapnya3"
+                            android:layout_toEndOf="@id/gdtkaro"
+                            android:layout_marginTop="70dp"
+                            android:text="Lihat Selengkapnya"
+                            android:textSize="10dp"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/buttonbg"/>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/DTMINAHASA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="25dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#191970">
+
+                        <ImageView
+                            android:id="@+id/gdtminahasa"
+                            android:layout_width="200dp"
+                            android:layout_height="100dp"
+                            android:layout_alignParentTop="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/datarantinggiminahasa" />
+
+                        <TextView
+                            android:id="@+id/tdtminahasa"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/gdtminahasa"
+                            android:padding="10dp"
+                            android:text="Dataran Tinggi Minahasa"
+                            android:textColor="#ffff"
+                            android:textStyle="bold"
+                            android:fontFamily="sans-serif"
+                            android:textSize="12dp"
+                            android:layout_centerHorizontal="true"/>
+
+                        <Button
+                            android:id="@+id/Selengkapnya4"
+                            android:layout_toEndOf="@id/gdtminahasa"
+                            android:layout_marginTop="70dp"
+                            android:text="Lihat Selengkapnya"
+                            android:textSize="10dp"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/buttonbg"/>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/DTPUNCAK"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="25dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#191970">
+
+                        <ImageView
+                            android:id="@+id/gdtpuncak"
+                            android:layout_width="200dp"
+                            android:layout_height="100dp"
+                            android:layout_alignParentTop="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/datarantinggipuncak" />
+
+                        <TextView
+                            android:id="@+id/tdtpuncak"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/gdtpuncak"
+                            android:padding="10dp"
+                            android:text="Dataran Tinggi Puncak"
+                            android:textColor="#ffff"
+                            android:textStyle="bold"
+                            android:fontFamily="sans-serif"
+                            android:textSize="12dp"
+                            android:layout_centerHorizontal="true"/>
+
+                        <Button
+                            android:id="@+id/Selengkapnya5"
+                            android:layout_toEndOf="@id/gdtpuncak"
+                            android:layout_marginTop="70dp"
+                            android:text="Lihat Selengkapnya"
+                            android:textSize="10dp"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/buttonbg"/>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </GridLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>
